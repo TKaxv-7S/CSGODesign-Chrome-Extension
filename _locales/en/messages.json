@@ -1,0 +1,10 @@
+{
+  "extensionName": {
+    "message": "CSGO.Design Extension",
+    "description": ""
+  },
+  "extDescription": {
+    "message": "Add 1-click inspecting button in steam market and inventory page.",
+    "description": ""
+  }
+}

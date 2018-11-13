@@ -1,0 +1,33 @@
+{
+    "manifest_version": 2,
+    "name": "__MSG_extensionName__",
+    "short_name": "CSGO.Design",
+    "version": "1.0",
+    "description": "__MSG_extDescription__",
+    "default_locale" : "en",
+    "homepage_url": "https://csgo.design",
+    "icons": {
+        "16": "icons/16.png",
+        "48": "icons/48.png",
+        "128": "icons/128.png"
+    },
+    "content_scripts": [
+        {
+            "js": [
+                    "jquery.min.js",
+                    "inventory.js"
+                  ],
+            "matches": [
+                        "*://steamcommunity.com/profiles/*/inventory*",
+                        "*://steamcommunity.com/id/*/inventory*"
+                       ]
+        },
+        {
+            "js": ["market.js"],
+            "matches": ["*://steamcommunity.com/market/listings/730/*"]
+        }
+    ],
+    "permissions": [
+        "*://steamcommunity.com/market/listings/730/*"
+    ]
+}
